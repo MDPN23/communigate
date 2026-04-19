@@ -1,0 +1,86 @@
+import { CommunityInfo, CommunityMember } from "@/lib/types";
+
+export const MOCK_COMMUNITIES: CommunityInfo[] = [
+  {
+    adminAddress: "0x1234567890abcdef1234567890abcdef12345678",
+    name: "TechClub BINUS",
+    symbol: "TCID",
+    baseURI: "ipfs://QmTechClubMetadata/",
+    sbtProxy: "0xaaaa111122223333444455556666777788889999",
+    badgeProxy: "0xbbbb111122223333444455556666777788889999",
+    memberCount: 142,
+    eventCount: 8,
+    totalBadgesMinted: 467,
+    createdAt: new Date("2026-03-15"),
+    description: "Komunitas teknologi terbesar di BINUS University. Fokus pada Web3, AI, dan Cloud Computing.",
+    imageURI: "/communities/techclub.svg",
+  },
+  {
+    adminAddress: "0x2345678901bcdef12345678901bcdef123456789",
+    name: "Art Society ITB",
+    symbol: "ASID",
+    baseURI: "ipfs://QmArtSocietyMetadata/",
+    sbtProxy: "0xcccc111122223333444455556666777788889999",
+    badgeProxy: "0xdddd111122223333444455556666777788889999",
+    memberCount: 89,
+    eventCount: 5,
+    totalBadgesMinted: 213,
+    createdAt: new Date("2026-03-20"),
+    description: "Wadah kreativitas seni digital & tradisional mahasiswa ITB.",
+    imageURI: "/communities/artsociety.svg",
+  },
+  {
+    adminAddress: "0x3456789012cdef123456789012cdef1234567890",
+    name: "SportsFed UI",
+    symbol: "SFID",
+    baseURI: "ipfs://QmSportsFedMetadata/",
+    sbtProxy: "0xeeee111122223333444455556666777788889999",
+    badgeProxy: "0xffff111122223333444455556666777788889999",
+    memberCount: 256,
+    eventCount: 12,
+    totalBadgesMinted: 891,
+    createdAt: new Date("2026-02-10"),
+    description: "Federasi olahraga Universitas Indonesia. Marathon, badminton, futsal, dan lainnya.",
+    imageURI: "/communities/sportsfed.svg",
+  },
+];
+
+export const MOCK_MEMBERS: Record<string, CommunityMember[]> = {
+  "0xaaaa111122223333444455556666777788889999": [
+    {
+      address: "0x1234567890abcdef1234567890abcdef12345678",
+      role: "admin",
+      sbtTokenId: 1,
+      joinedAt: new Date("2026-03-15"),
+      displayName: "Alice (Admin)",
+    },
+    {
+      address: "0xabc1230000000000000000000000000000000001",
+      role: "affair",
+      sbtTokenId: 2,
+      joinedAt: new Date("2026-03-16"),
+      displayName: "Bob (Affair)",
+    },
+    {
+      address: "0xdef4560000000000000000000000000000000002",
+      role: "member",
+      sbtTokenId: 3,
+      joinedAt: new Date("2026-03-17"),
+      displayName: "Charlie",
+    },
+    {
+      address: "0x7890ab0000000000000000000000000000000003",
+      role: "member",
+      sbtTokenId: 4,
+      joinedAt: new Date("2026-03-18"),
+      displayName: "Diana",
+    },
+    {
+      address: "0xcdef120000000000000000000000000000000004",
+      role: "member",
+      sbtTokenId: 5,
+      joinedAt: new Date("2026-03-20"),
+      displayName: "Eve",
+    },
+  ],
+};

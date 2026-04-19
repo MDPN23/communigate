@@ -1,0 +1,103 @@
+import { EventInfo, EventStatus } from "@/lib/types";
+
+export const MOCK_EVENTS: Record<string, EventInfo[]> = {
+  // TechClub events
+  "0xbbbb111122223333444455556666777788889999": [
+    {
+      id: 1,
+      name: "Web3 Hackathon 2026",
+      maxCapacity: 100,
+      currentMinted: 87,
+      claimListCID: "ipfs://QmHack2026ClaimList",
+      status: EventStatus.Active,
+      createdAt: new Date("2026-04-01"),
+      imageURI: "/badges/hackathon.svg",
+    },
+    {
+      id: 2,
+      name: "Solidity Workshop #3",
+      maxCapacity: 50,
+      currentMinted: 50,
+      claimListCID: "ipfs://QmSolWorkshop3",
+      status: EventStatus.Closed,
+      createdAt: new Date("2026-03-25"),
+      imageURI: "/badges/workshop.svg",
+    },
+    {
+      id: 3,
+      name: "AI x Blockchain Summit",
+      maxCapacity: 200,
+      currentMinted: 0,
+      claimListCID: "",
+      status: EventStatus.Draft,
+      createdAt: new Date("2026-04-10"),
+      imageURI: "/badges/summit.svg",
+    },
+  ],
+  // Art Society events
+  "0xdddd111122223333444455556666777788889999": [
+    {
+      id: 1,
+      name: "Digital Art Exhibition",
+      maxCapacity: 75,
+      currentMinted: 42,
+      claimListCID: "ipfs://QmDigitalArtExpo",
+      status: EventStatus.Active,
+      createdAt: new Date("2026-04-05"),
+      imageURI: "/badges/art-expo.svg",
+    },
+    {
+      id: 2,
+      name: "NFT Minting Workshop",
+      maxCapacity: 30,
+      currentMinted: 28,
+      claimListCID: "ipfs://QmNFTWorkshop",
+      status: EventStatus.Active,
+      createdAt: new Date("2026-04-08"),
+      imageURI: "/badges/nft-workshop.svg",
+    },
+  ],
+  // SportsFed events
+  "0xffff111122223333444455556666777788889999": [
+    {
+      id: 1,
+      name: "UI Marathon 2026",
+      maxCapacity: 500,
+      currentMinted: 342,
+      claimListCID: "ipfs://QmUIMarathon2026",
+      status: EventStatus.Active,
+      createdAt: new Date("2026-03-01"),
+      imageURI: "/badges/marathon.svg",
+    },
+    {
+      id: 2,
+      name: "Badminton Tournament",
+      maxCapacity: 64,
+      currentMinted: 64,
+      claimListCID: "ipfs://QmBadmintonTournament",
+      status: EventStatus.Closed,
+      createdAt: new Date("2026-02-20"),
+      imageURI: "/badges/badminton.svg",
+    },
+    {
+      id: 3,
+      name: "Futsal League Season 2",
+      maxCapacity: 120,
+      currentMinted: 0,
+      claimListCID: "",
+      status: EventStatus.Draft,
+      createdAt: new Date("2026-04-12"),
+      imageURI: "/badges/futsal.svg",
+    },
+    {
+      id: 4,
+      name: "Swimming Championship 2025",
+      maxCapacity: 80,
+      currentMinted: 80,
+      claimListCID: "ipfs://QmSwimChamp2025",
+      status: EventStatus.Archived,
+      createdAt: new Date("2025-12-15"),
+      imageURI: "/badges/swimming.svg",
+    },
+  ],
+};
